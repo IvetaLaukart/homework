@@ -1,0 +1,30 @@
+<i class="fa-thin fa-image-polaroid-user">
+<div class="d-flex justify-content-center"><h1>Fake Instagram</h1></div>
+  </i>  
+
+    <div class="d-flex justify-content-center">
+    <form class="d-flex flex-column align-items-center" action="/newpost" method = "POST">
+    <div class="mb-3 photo">
+    <input name = "image" placeholder = "new Photo" type="text" class="form-control">
+  </div>
+  <div class="mb-3 my-3">
+    <input name = "discrybe" placeholder = "Write your post here" type="text" class="form-control">
+  </div>
+  <div class="d-flex justify-content-center my-2">
+    <button type="submit" class="btn btn-primary">publish a post</button>
+  </div>
+  </form>
+</div>
+<hr />
+
+<div class="d-flex flex-column align-items-center">
+    {{#each writeText}}
+    <div class="card my-3" style="width: 25rem;">
+  <div class="card-body">
+      <p class="d-flex justify-content-center"><img src={{this.image}} alt="Photo" width="200" height="210"></p>
+    <p class="card-text">{{this.discrybe}}</p>
+  </div>
+  </div>
+
+{{/each}}
+</div>
