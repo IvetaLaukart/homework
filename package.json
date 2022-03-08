@@ -12,11 +12,15 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.12.1",
     "@typescript-eslint/parser": "^5.12.1",
-    "eslint": "^8.9.0"
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
   },
   "dependencies": {
+    "cookie-parser": "^1.4.6",
     "express": "^4.17.3",
-    "hbs": "^4.2.0"
+    "hbs": "^4.2.0",
+    "set-cookie-parser": "^2.4.8"
   },
   "repository": {
     "type": "git",
